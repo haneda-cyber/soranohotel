@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <title>Hotel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="image/img_logo.png" alt=""> </a>
+
+        <ul class="nav-menu">
+          <li> <a href="#home" class="nav-link">Home</a> </li>
+          <li> <a href="#about" class="nav-link">About</a> </li>
+          <li> <a href="#rooms" class="nav-link">Rooms</a> </li>
+          <li> <a href="#restaurant" class="nav-link">Restaurant</a> </li>
+          <li> <a href="#gallery" class="nav-link">Gallery</a> </li>
+          <li> <a href="#contact" class="nav-link">Contact</a> </li>
+        </ul>
+
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>SORANO HOTEL</h1>
+          <p>大きな空を感じ、豊かな緑に癒される<br>
+            心地よさへのこだわりと、<br>
+            慣習にとらわれない個性
+          </p>
+          
+          <button>MORE INFO</button>
+        </div>
+      </div>
+      <div class="image">
+        <img src="image/kona.jpg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="image/kona.jpg" alt="" class="slide active" onclick="img('image/kona.jpg')">
+        <img src="image/home2.jpg" alt="" class="slide" onclick="img('image/home2.jpg')">
+        <img src="image/home3.jpg" alt="" class="slide" onclick="img('image/home3.jpg')">
+        <img src="image/kona1jpg.jpg" alt="" class="slide" onclick="img('image/kona1jpg.jpg')">
+      </div>
+    </div>
+  </section>
+  
+  <section class="book">
+    <div class="container flex">
+      <div class="input grid">
+        <div class="box">
+          <label>チェックイン:</label>
+          <input type="date" placeholder="Check-in-Date">
+        </div>
+        <div class="box">
+          <label>チェックアウト:</label>
+          <input type="date" placeholder="Check-out-Date">
+        </div>
+        <div class="box">
+          <label>大人:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+        <div class="box">
+          <label>子供:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+      </div>
+      <div class="search">
+        <input type="submit" value="SEARCH">
+      </div>
+    </div>
+  </section>
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="image/a1.jpg" alt="" class="image1">
+          <img src="image/solano2.webp" alt="" class="image2">
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h5>TACHIKAWA-SHI, TOKYO／2020.06.08 GRAND OPENING</h5>
+          <h2>東京にあって東京にないホテル</h2>
+          <p>SORANO HOTEL は、東京立川に誕生した新発想のホテルです。
+            コンセプトは、心にも体にも健やかであること「ウェルビーイング」。
+            新宿からたったの30分で非日常に飛び立ち、 </p>
+          <p>食、温泉・スパ、フィットネス・ワークショップなど様々な癒しを気軽に楽しむ。
+            「ウェルビーイング・ショートトリップ」という新しい旅のご提案です。
+            従来のホテルの常識に捕らわれず、自由な発想で、お客さま、そして地域のみなさまに、
+            新しい時代の、新しい心地よさとよろこびをお届けしたいと考えます</p>
+          <button class="btn1">READ MORE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper top">
+    <div class="container">
+      <div class="text">
+        <h2>Service</h2>
+        <p>10Fと最上階11Fの2フロアに、60ｍのインフィニティプールをはじめ、独自に掘削した温泉水を使用した
+          温浴施設・インドアスパ、超微粒子によるナノミストサウナ、そして一人ひとりのコンディショニングに
+          寄り添うジムスタジオなど、心身をリセットする施設やプログラムをご用意します。 </p>
+
+        <div class="content">
+          <div class="box flex">
+            <i class="fas fa-swimming-pool"></i>
+            <span>Swimming pool</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-dumbbell"></i>
+            <span>Gym & yogo</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-spa"></i>
+            <span>Spa & massage</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-ship"></i>
+            <span>Boat Tours</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-swimmer"></i>
+            <span>Surfing Lessons</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-microphone"></i>
+            <span>Conference room</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-water"></i>
+            <span>Diving & smorking</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-umbrella-beach"></i>
+            <span>Private Beach</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="room top" id="room">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>ーSORANO HOTEL HIGHEST LEVEL</h5>
+          <h2>Rooms & Suites</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW ALL</button>
+        </div>
+      </div>
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/r1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>スタンダードルーム</h3>
+            <p> <span></span>16000円~18600<span>/per night</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/r2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>ノーマルルーム</h3>
+            <p> <span></span>18000円~19000 <span>/per night</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/r3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>スイートルーム</h3>
+            <p> <span>$</span>28000円~38000 <span>/per night</span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper wrapper2 top">
+    <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h5>AT THE HEART OF COMMUNICATION</h5>
+          <h2>お客様の声</h2>
+        </div>
+
+        <div class="para">
+          <p>素晴らしいホスピタリティーでした。出張や旅行で最上級とされるホテルや旅館も経験してきましたが、それ同等かそれ以上に感じる、上質な時間を過ごせました。スタッフの教育に留まらず、地産地消も意識したダイニング、地域の特筆を忘れない姿勢、建築設計も細部含めて目を見張るものがあります。</p>
+
+          <div class="box flex">
+            <div class="img">
+              <img src="image/c.jpg" alt="">
+            </div>
+            <div class="name">
+              <h5>KATE PALMER</h5>
+              <h5>IDAHO</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="restaurant top" id="restaurant">
+    <div class="container flex">
+      <div class="left">
+        <img src="image/img_dining03.jpg" alt="">
+      </div>
+      <div class="right">
+        <div class="text">
+          <h2>Restaurant & Bar</h2>
+          <p> 食を通しお届けするWell-being体験
+            新たなホテルダイニングを目指して！</p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem open">
+            <h2 class="accordionIHeading">DAICHINO RESTAURANT</h2>
+            <div class="accordionItemContent">
+              <p>Well-being をコンセプトとするSORANO HOTELが目指すのは、心にもからだにも優しく、そして自由な発想で創る新しいジャンルのジャパニーズ・クロスオーバーフードスタイル。今世界が注目する「和食」をベースに、様々な国の料理のエッセンスを掛け合わせ、より洗練された、そして何よりも「美味しい」料理です。
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">SORANO ROOFTOP BAR</h2>
+            <div class="accordionItemContent">
+              <p>素晴らしい眺望と圧巻のインフィニティプールに癒される。SORANO HOTELのアイコン「インフィニティプール」向かいにあるSORANO ROOFTOP BAR。選りすぐりのアルコールドリンクはもちろんのこと、低アルコール、ノンアルコールドリンクや、フルーツ、ハーブを使用したカクテルなどWell-beingを意識したドリンクも豊富に揃えてお届けしています。季節ごとにお届けするコース料理もお楽しみください。
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">IMA LOUNGE</h2>
+            <div class="accordionItemContent">
+              <p>「IMA LOUNGE」のIMAは、”今“と”居間”を意味しています。Well-being を含む、”イマドキ”なトレンドやアイテムをご提供しながら、気軽に立ち寄りちょっとした寛ぎの場になることを願って設けたオープンなラウンジです。
+
+
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">BREAKFAST</h2>
+            <div class="accordionItemContent">
+              <p>一日の始まりに、食材そのものの美味しさを五感で味わう。
+                船上で〆て丁寧に下処理した真鱈を、北海道道東の標津港より直送で仕入れ、
+                立川産の野菜を中心に食材にこだわり、素材を生かした調理で昔ながらの和朝食をSORANOSスタイルでご用意いたしました。
+                シンプルだから”贅沢“なSORANO 和朝食。ご飯もお味噌汁もたっぷり召し上がれ！
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section class="gallary mtop " id="gallary">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>WELCOME TO OUR PHOTO GALLERY</h5>
+          <h2>Photo Gallery of Our Hotel</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW GALLERY</button>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="image/g1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/g2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/g3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/g4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/g5.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/g6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/g7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="image/g8.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+
+
+  <section class="map top">
+    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9540689525375!2d139.40925411486222!3d35.70274788018933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e13647e5057b%3A0xa58a7eefefe541db!2z44K944Op44OO44Ob44OG44Or!5e0!3m2!1sja!2sjp!4v1675536701965!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+  <div class="box_con">
+    <h2>Contact</h2>
+    <form method="post" action="mail.php">
+    <table class="formTable">
+    <tr>
+        <th>確認</th>
+        <td>
+            <div class="box_br">
+                 <label>
+                    <input name="contact_type" type="radio" value="1" class="radio02-input in_top" id="radio02-01">
+                    <label for="radio02-01">テキスト1</label>
+                </label>
+            </div>
+            <div class="box_br">
+                <label>
+                    <input name="contact_type" type="radio" value="1" class="radio02-input in_top" id="radio02-02">
+                    <label for="radio02-02">テキスト2</label>
+                </label>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <th>ご用件</th>
+        <td><select name="ご用件">
+            <option value="">選択してください</option>
+            <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+            <option value="リンクについて">リンクについて</option>
+          </select></td>
+      </tr>
+      <tr>
+        <th>お名前<span>必須</span></th>
+        <td><input size="20" type="text" name="お名前" /></td>
+      </tr>
+      <tr>
+        <th>電話番号（半角）<span>必須</span></th>
+        <td><input size="30" type="text" name="電話番号" /></td>
+      </tr>
+      <tr>
+        <th>Mail（半角）</th>
+        <td><input size="30" type="text" name="Email" /></td>
+      </tr>
+      <tr>
+        <th>お問い合わせ内容<br /></th>
+        <td><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></td>
+      </tr>
+    </table>
+    <div class="con_pri">
+        <div class="box_pri">
+            <div class="box_tori">
+                <h4>プライバシー</h4>
+                <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+            </div>
+            <div class="box_num">
+                <h4>プライバシー</h4>
+                <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+            </div>
+            <div class="box_num">
+                <h4>プライバシー</h4>
+                <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+            </div>
+            <div class="box_num">
+                <h4>プライバシー</h4>
+                <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+            </div>
+        </div>
+    </div>
+    <div class="box_check">
+        <label>
+            <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree"><span class="check">プライバシーポリシーに同意する</span>
+        </label>
+    </div>
+    <p class="btn">
+        <span><input type="submit" value="　 確認 　" /></span>
+    </p>
+  </form>
+</div>
+
+  
+
+  
+
+  
+  
+<footer id="footer05" class="footer outer-block">
+  <div class="main">
+    <div class="left">
+      <div class="inner">
+        <div class="head clearfix">
+          <div class="logo">
+            <a href="#"><img src="image/img_logo.png" alt=""></a>
+          </div>
+          <p class="address">〒135-0002<br>東京都江東区住吉1丁目17-20　<br class="sp">住吉ビル7F</p>
+        </div>
+        <div class="c-btn">
+          <a href="#"><span>お問い合わせ</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="inner">
+        <ul class="nav">
+          <li><a href="https://b-risk.jp/about/">Home</a></li>
+          <li><a href="https://b-risk.jp/works/">About</a></li>
+          <li><a href="https://b-risk.jp/works/">Rooms</a></li>
+          <li><a href="https://b-risk.jp/works/">Restaurant</a></li>
+          <li><a href="https://b-risk.jp/works/">Gallery</a></li>
+          <li><a href="https://b-risk.jp/blog/">Contact</a></li>
+          <li><a href="https://b-risk.jp/plan-photo/">写真撮影付き宿泊プラン</a></li>
+          <li><a href="https://b-risk.jp/contact/">お問い合わせ・無料相談はこちら</a></li>
+          <li><a href="https://b-risk.jp/faq/">よくあるご質問</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    COPYRIGHT © SORANO HOTEL.
+  </div>
+</footer>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+  <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+  <script>
+    var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionIHeading');
+
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+    }
+
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (var i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+      }
+    }
+  </script>
+</body>
+
+</html>
